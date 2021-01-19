@@ -1,0 +1,21 @@
+general:
+  pop_size: 10
+  gpu_num: 0
+  batch_size: 128
+  num_workers: 12
+  genetic_prob: [0.9, 0.2]  # crossover, mutation
+  mutation_probs: [0.7, 0.1, 0.1, 0.1, 0]  # add res, add conv, add pooling, remove layer, alter params
+
+status:
+  is_running: False
+
+network:
+  max_length: 30
+  conv_limit: [1, 3]
+  res_limit: [3, 6]
+  pool_limit: [1, 2]
+  input_channel: 3
+  epoch: 20
+  output_channel: [64, 128, 256]
+  input_size: [128, 64]
+  output_size: [16, 8]

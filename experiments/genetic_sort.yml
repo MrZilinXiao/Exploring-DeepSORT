@@ -1,0 +1,8 @@
+# this is a CNN-GA-based configuration file, only containing dataset related settings
+dataset: MOT16
+input_size: !!python/tuple [128, 64]  # checked
+transforms:  # checked
+  random_horizontal_flip_p: 0.5
+  padding: 10
+  random_erasing: false
+  random_erasing_p: 0.5

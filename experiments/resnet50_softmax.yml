@@ -1,0 +1,41 @@
+dataset: MOT16
+backbone: resnet50
+pretrained: false
+input_size: !!python/tuple [256, 128]
+loss:
+  type: softmax
+  margin: 0.3
+  center_weight: 0.005
+  label_smoothing:
+    enable: false
+    epsilon: 0.1
+
+sampler: softmax
+
+neck_feat: after
+bnn_neck: false
+warmup:
+  enable: false
+  method: linear
+  steps: !!python/tuple [10, 20]
+  factor: 1.0 / 3
+  max_epoch: 30
+
+last_stride: 2
+
+general:
+  batch_size: 128
+  num_workers: 4
+  max_epoch: 30
+  optim: Adam
+  lr: 3.5e-4
+  bias_lr_factor: 2
+  weight_decay: 5e-4
+  bias_weight_decay: 0.0
+  center_lr: 0.5
+  momentum: 0.9
+transforms:
+  random_horizontal_flip_p: 0.5
+  padding: 10
+  random_erasing: false
+  random_erasing_p: 0.5

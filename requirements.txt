@@ -1,0 +1,16 @@
+nvidia-ml-py3
+numpy
+torch
+tensorboardX
+opencv-python
+scipy
+scikit-learn
+torchvision
+Pillow
+torchnet
+pandas
+tqdm
+sklearn
+PyYAML
+motmetrics
+visualdl~=2.0.4
