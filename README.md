@@ -2,7 +2,7 @@
 
 Official implementation of *Exploring the Effectiveness of Appearance Descriptor in DeepSORT*
 
-
+Update on 2022/04: Our work is accpeted by IJCNN'22. Citation info has been updated.
 
 ## Steps to Use
 
@@ -93,7 +93,16 @@ transforms:
 ## Citation
 
 ```
-WIP
+@INPROCEEDINGS{9892052,
+  author={Xiao, Zilin and Sun, Yanan},
+  booktitle={2022 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={Exploring the Effectiveness of Appearance Descriptor in DeepSORT}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IJCNN55064.2022.9892052}
+}
 ```
 
 
